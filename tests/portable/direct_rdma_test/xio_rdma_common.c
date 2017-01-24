@@ -245,9 +245,9 @@ void init_xio_rdma_common_test(void)
 	int res;
 
 	enum xio_log_level xio_log_level = XIO_LOG_LEVEL_TRACE;
-if(0)
-	xio_set_opt(NULL, XIO_OPTLEVEL_ACCELIO, XIO_OPTNAME_LOG_LEVEL,
-		    &xio_log_level, sizeof(xio_log_level));
+  if(0)
+    xio_set_opt(NULL, XIO_OPTLEVEL_ACCELIO, XIO_OPTNAME_LOG_LEVEL,
+          &xio_log_level, sizeof(xio_log_level));
 
 	test_params.pool = msg_pool_alloc(MAX_POOL_SIZE, 0, 1);
 	xio_assert(test_params.pool != NULL);

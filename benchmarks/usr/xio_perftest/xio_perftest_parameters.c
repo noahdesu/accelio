@@ -528,8 +528,8 @@ void print_test_info(const struct perf_parameters *user_param)
 	if (user_param->intf_name)
 		printf(" Local Interface	: %s\n",
 		       user_param->intf_name);
-		printf(" Server Port		: %d\n",
-	       user_param->server_port);
+  printf(" Server Port		: %d\n",
+       user_param->server_port);
 	printf(" Transport Type		: %s\n",
 	       user_param->transport);
 	printf(" Test Type		: %s\n",
